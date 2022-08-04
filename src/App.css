@@ -1,38 +1,85 @@
+html {
+  scroll-behavior: smooth;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100vw;
+  background: rgb(238, 174, 202);
+  background: linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  /* background: linear-gradient(
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.7)
+  ); */
+  /* url("https://images.pexels.com/photos/11975905/pexels-photo-11975905.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+      repeat; */
+  background-size: cover;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* position: absolute; */
+}
+.containerOne {
+  display: flex;
+  align-items: center;
+  width: 80vw;
+  margin: 20px;
+  justify-content: space-between;
+  border: 3px solid black;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.card {
+  background-color: inherit;
+  width: 50vw;
+  padding: 15px;
+}
+.title h2 {
+  border-bottom: 4px double lightgrey;
+  padding: 0px 6px 0px 6px;
+  width: 30vw;
+  text-align: start;
+}
+.title h3 {
+  border-bottom: 3px groove grey;
+}
+.hello button {
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+
+  /* display: none; */
 }
 
-.App-link {
-  color: #61dafb;
+.main-containe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-user input,
+.add-user button {
+  margin: 5px;
+  padding: 5px;
+  width: 20vw;
+  text-align: center;
+  font-size: 28px;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.down-btn {
+  /* position: absolute; */
+}
+.top-btn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: red;
 }
